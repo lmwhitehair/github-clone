@@ -6,7 +6,7 @@
         <img src="assets/photos/workfeatured-GitHub-2.png" width="60" height="50" class="d-incline-block alight-top" alt="image">
 
         <form class="form-inline d-flex md-form form-sm">
-            <input class="form-control form-control-sm mr-3 w-120 text-white" type="text" placeholder="Search or jump to..." aria-label="Search or jump to...">
+            <input class="form-control form-control-sm mr-3 w-120 text-white" id="navbar-search-bar" type="text" placeholder="Search or jump to..." aria-label="Search or jump to...">
             <i class="fas fa-search" aria-hidden="true"></i>
         </form>
 
@@ -24,17 +24,35 @@
                 <a class="nav-link text-white" href="">Explore</a>
             </li>
         </ul>
+
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" id="navbar-dropdown-plus" role="button" data-bs-toggle="dropdown" 
+            aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+              </svg>
+            </a>  
+            <ul class="dropdown-menu" id="navbar-dropdown-menu-plus" aria-labelledby="navbardropdown">
+                <li><a class="dropdown-item text-white" href="#">New repository</a> </li>
+                <li><a class="dropdown-item text-white" href="#">Import repository</a> </li>
+                <li><a class="dropdown-item text-white" href="#">New gist</a> </li>
+                <li><a class="dropdown-item text-white" href="#">New organization</a> </li>
+                <li><a class="dropdown-item text-white" href="#">New project</a> </li>
+            </ul>
+        </li>
     
         <li class="nav-item dropdown">
             <a href="#" class="nav-link dropdown-toggle" id="navbar-dropdown" role="button" data-bs-toggle="dropdown" 
-            aria-expanded="false">
-            </a> 
-            <ul class="dropdown-menu" aria-labelledby="navbardropdown">
+            aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+              </svg>
+            </a>  
+            <ul class="dropdown-menu" id="navbar-dropdown-menu" aria-labelledby="navbardropdown">
                 <p style="color:white">Signed in as</p>
                 <p style="color: white;">\Account username/</p>
                 <li><hr class="dropdown-divider"></li>
                 <form class="form-inline d-flex md-form form-sm">
-                    <input class="form-control form-control-sm mr-3 w-100 text-white" type="text" placeholder="Set Status" aria-label="Set Status">
+                    <input class="form-control form-control-sm mr-3 w-100 text-white" id="dropdown-status-bar" type="text" placeholder="Set Status" aria-label="Set Status">
                     <i class="fas fa-search" aria-hidden="true"></i>
                 </form>
                 <li><hr class="dropdown-divider"></li>

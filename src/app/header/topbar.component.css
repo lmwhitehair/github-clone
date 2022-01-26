@@ -1,4 +1,4 @@
-.form-control {
+#navbar-search-bar {
   background-color: #303d56;
   position: relative;
   margin-left: 6px;
@@ -8,17 +8,19 @@
 .navbar {
   background-color: #060f26;
 }
-.dropdown {
+#navbar-dropdown {
   position: relative;
   display: flex;
-  margin-top: -45px;
+  margin-top: -73px;
   margin-bottom: 2px;
+  margin-left: -30px;
   justify-content: flex-end;
+  color: white;
 }
 
-.dropdown-menu {
+#navbar-dropdown-menu {
   background-color: #060f26;
-  left: -300%;
+  left: -400%;
 }
 
 .image {
@@ -35,7 +37,7 @@
   font-size: 13px;
   margin-left: 260px;
   margin-bottom: 2px;
-  margin-top: -40px;
+  margin-top: -55px;
 }
 #nav2 {
   position: relative;
@@ -43,7 +45,7 @@
   font-size: 13px;
   margin-left: 1px;
   margin-bottom: 2px;
-  margin-top: -40px;
+  margin-top: -55px;
 }
 #nav3 {
   position: relative;
@@ -51,7 +53,7 @@
   font-size: 13px;
   margin-left: 1px;
   margin-bottom: 2px;
-  margin-top: -40px;
+  margin-top: -55px;
 }
 #nav4 {
   position: relative;
@@ -59,7 +61,7 @@
   font-size: 13px;
   margin-left: 1px;
   margin-bottom: 2px;
-  margin-top: -40px;
+  margin-top: -55px;
 }
 a:hover {
   color: grey;
@@ -67,4 +69,21 @@ a:hover {
 
 .dropdown-divider {
   color: lightgray;
+}
+#navbar-dropdown-plus {
+  position: relative;
+  display: flex;
+  margin-top: -60px;
+  margin-bottom: 30px;
+  margin-left: 640px;
+  justify-content: flex-end;
+  color: white;
+}
+#navbar-dropdown-menu-plus {
+  background-color: #060f26;
+  right: 1%;
+}
+#dropdown-status-bar {
+  background-color: #303d56;
+  position: relative;
 }
