@@ -1,29 +1,60 @@
-<nav class="navbar navbar-dark bg-dark navbar-fixed-top">
-
-    <img src="assets/photos/workfeatured-GitHub-2.png" width="60" height="50" class="d-incline-block alight-top" alt="image">
+<nav class="navbar navbar-fixed-top">
  
 
     <div class="container-fluid">
 
+        <img src="assets/photos/workfeatured-GitHub-2.png" width="60" height="50" class="d-incline-block alight-top" alt="image">
+
         <form class="form-inline d-flex md-form form-sm">
-            <input class="form-control form-control-sm mr-3 w-120" type="text" placeholder="Search or jump to..." aria-label="Search or jump to...">
+            <input class="form-control form-control-sm mr-3 w-120 text-white" type="text" placeholder="Search or jump to..." aria-label="Search or jump to...">
             <i class="fas fa-search" aria-hidden="true"></i>
         </form>
 
         <ul class="nav">
-            <li class="nav-item">
+            <li class="nav-item" id="nav1">
                 <a class="nav-link text-white active" href="">Pull Requests</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" id="nav2">
                 <a class="nav-link text-white" href="">Issues</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" id="nav3">
                 <a class="nav-link text-white" href="">Marketplace</a>
             </li>
-            <li class="nav-item"> 
-                <a class="nav-link text-whiteß" href="">Explore</a>
+            <li class="nav-item" id="nav4"> 
+                <a class="nav-link text-white" href="">Explore</a>
             </li>
         </ul>
+    
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" id="navbar-dropdown" role="button" data-bs-toggle="dropdown" 
+            aria-expanded="false">
+            </a> 
+            <ul class="dropdown-menu" aria-labelledby="navbardropdown">
+                <p style="color:white">Signed in as</p>
+                <p style="color: white;">\Account username/</p>
+                <li><hr class="dropdown-divider"></li>
+                <form class="form-inline d-flex md-form form-sm">
+                    <input class="form-control form-control-sm mr-3 w-100 text-white" type="text" placeholder="Set Status" aria-label="Set Status">
+                    <i class="fas fa-search" aria-hidden="true"></i>
+                </form>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item text-white" href="#">Your profile</a> </li>
+                <li><a class="dropdown-item text-white" href="#">Your repositories</a></li>
+                <li><a class="dropdown-item text-white" href="#">Your codespaces</a></li>
+                <li><a class="dropdown-item text-white" href="#">Your projects</a></li>
+                <li><a class="dropdown-item text-white" href="#">Your stars</a></li>
+                <li><a class="dropdown-item text-white" href="#">Your gists</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item text-white" href="#">Upgrade</a></li>
+                <li><a class="dropdown-item text-white" href="#">Feature preview</a></li>
+                <li><a class="dropdown-item text-white" href="#">Help</a></li>
+                <li><a class="dropdown-item text-white" href="#">Settings</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item text-white" href="#">Sign out</a></li>
+            </ul>
+        </li>
+
+
     </div>
 
 </nav>

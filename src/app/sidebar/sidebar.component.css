@@ -3,24 +3,26 @@
 }
 
 .sidebar-nav {
+  position: relative;
   background-color: black;
-}
-
-.sidebar-nav {
   font-size: small;
 }
 
 .sidebar-header {
+  position: relative;
   font-size: small;
 }
 
 .btn {
+  position: relative;
   size: 3px;
   background-color: green;
   border-color: green;
+  margin-right: 50px;
 }
 
 .form-control {
+  position: relative;
   background-color: black;
   border-color: grey;
 }
@@ -32,4 +34,18 @@
 .sidebar {
   width: 320px;
   background-color: #0c162d;
+}
+
+.form-control {
+  position: relative;
+  background-color: #303d56;
+}
+
+.dropdown-menu {
+  position: relative;
+}
+
+p {
+  margin-left: 25px;
+  margin-top: 25px;
 }

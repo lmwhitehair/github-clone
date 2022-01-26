@@ -1,7 +1,70 @@
 .form-control {
-  background-color: black;
+  background-color: #303d56;
+  position: relative;
+  margin-left: 6px;
+  margin-right: 1150px;
 }
 
 .navbar {
-  background-color: #0c162d;
+  background-color: #060f26;
+}
+.dropdown {
+  position: relative;
+  display: flex;
+  margin-top: -45px;
+  margin-bottom: 2px;
+  justify-content: flex-end;
+}
+
+.dropdown-menu {
+  background-color: #060f26;
+  left: -300%;
+}
+
+.image {
+  position: relative;
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-right: 7px;
+  margin-bottom: 5px;
+}
+
+#nav1 {
+  position: relative;
+  font-weight: bold;
+  font-size: 13px;
+  margin-left: 260px;
+  margin-bottom: 2px;
+  margin-top: -40px;
+}
+#nav2 {
+  position: relative;
+  font-weight: bold;
+  font-size: 13px;
+  margin-left: 1px;
+  margin-bottom: 2px;
+  margin-top: -40px;
+}
+#nav3 {
+  position: relative;
+  font-weight: bold;
+  font-size: 13px;
+  margin-left: 1px;
+  margin-bottom: 2px;
+  margin-top: -40px;
+}
+#nav4 {
+  position: relative;
+  font-weight: bold;
+  font-size: 13px;
+  margin-left: 1px;
+  margin-bottom: 2px;
+  margin-top: -40px;
+}
+a:hover {
+  color: grey;
+}
+
+.dropdown-divider {
+  color: lightgray;
 }
