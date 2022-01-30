@@ -1,12 +1,12 @@
 #navbar-search-bar {
-  background-color: #303d56;
+  background-color: #0d1116;
   position: relative;
   margin-left: 6px;
   margin-right: 1150px;
 }
 
 .navbar {
-  background-color: #060f26;
+  background-color: #161b22;
 }
 #navbar-dropdown {
   position: relative;
@@ -19,7 +19,7 @@
 }
 
 #navbar-dropdown-menu {
-  background-color: #060f26;
+  background-color: #161b22;
   left: -400%;
 }
 
@@ -80,7 +80,7 @@ a:hover {
   color: white;
 }
 #navbar-dropdown-menu-plus {
-  background-color: #060f26;
+  background-color: #161b22;
   right: 1%;
 }
 #dropdown-status-bar {

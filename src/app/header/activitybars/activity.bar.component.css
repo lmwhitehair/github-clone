@@ -1,0 +1,31 @@
+.card {
+  width: 25rem;
+  background-color: #0d1116;
+  display: inline;
+}
+
+#cardheader {
+  background-color: black;
+  padding-bottom: -40px;
+  margin-left: 400px;
+  text-decoration: none;
+}
+
+#cardinfo {
+  font-size: smaller;
+  margin-right: 300px;
+}
+
+#masterlink {
+  background-color: darkblue;
+}
+#cardbody {
+  width: 40rem;
+  height: 7rem;
+}
+
+hr {
+  margin-left: 20rem;
+  size: 3;
+  background-color: gray;
+}
