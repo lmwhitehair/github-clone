@@ -1,0 +1,24 @@
+footer {
+  margin-left: 1.5rem;
+  background-color: black;
+}
+
+#linkcolumn1 {
+  color: grey;
+  font-size: smaller;
+}
+
+#linkcolumn2 {
+  color: grey;
+  font-size: smaller;
+}
+
+#linkcolumn3 {
+  color: grey;
+  font-size: smaller;
+}
+
+p {
+  color: lightgray;
+  font-size: smaller;
+}

@@ -25,6 +25,8 @@
   position: relative;
   background-color: #020408;
   border-color: grey;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 .nav-item {
