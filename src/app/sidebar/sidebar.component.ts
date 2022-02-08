@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, Input } from "@angular/core";
 
 @Component({
     selector: 'github-sidebar',
@@ -7,5 +7,9 @@ import { Component } from "@angular/core";
 })
 
 export class SideBarComponent {
+    @Input() repoName: String;
 
+    constructor(){
+        this.repoName = "No name";
+    }
 }
