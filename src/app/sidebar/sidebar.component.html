@@ -1,35 +1,52 @@
-
 <body>
-    
-    <div class="app" style="display: flex; height: 100%; position: absolute">
-        <div class="sidebar text-white"  id="sidebar-showcase" role="cdb-sidebar">
-        <div class="sidebar-container">
-            <div class="sidebar-header">
-                <p>Repositories <button type="button" class="btn btn-primary btn-sm float-end">New</button> </p>
-            </div>
-            <div class="sidebar-nav">
-            <form class="form-inline d-flex md-form form-sm float-middle">
-                <input class="form-control form-control-sm mr-3 w-120 text-white" type="text" placeholder="Find a repository..." aria-label="repositories">
-                <i class="fas fa-search" aria-hidden="true"></i>
-            </form>
-            <div class="sidenav">
-            
-                <li class="nav-item justify-content-center">
-                    <a class="nav-link text-white active" href="">"Repository name 1"</a>
-                </li>
-                
-                <li class="nav-item justify-content-center">
-                    <a class="nav-link text-white active" href="">"Repository name 2"</a>
-                </li>
-            
+  <div
+    class="container-fluid d-flex overflow-auto"
+    style="display: flex; height: 100%; position: absolute"
+  >
+    <div class="sidebar text-white" id="sidebar-showcase" role="cdb-sidebar">
+      <div class="sidebar-container">
+        <div class="sidebar-header">
+          <p>
+            Repositories
+            <button type="button" class="btn btn-primary btn-sm float-end">
+              New
+            </button>
+          </p>
+        </div>
+        <div class="sidebar-nav">
+          <form class="form-inline d-flex md-form form-sm float-middle">
+            <input
+              class="form-control form-control-sm mr-3 w-120 text-white"
+              type="text"
+              placeholder="Find a repository..."
+              aria-label="repositories"
+            />
+            <i class="fas fa-search" aria-hidden="true"></i>
+          </form>
+          <div *ngFor="let data of sideBars">
+            <github-sidebar-card
+              repoName="{{ data.repoName }}"
+            ></github-sidebar-card>
+          </div>
+          <!--
+          <div class="sidenav">
+            <li class="nav-item justify-content-center">
+              <a class="nav-link text-white active" href=""
+                >"Repository name 1"</a
+              >
+            </li>
 
-            </div>
-            </div>
-        </div>
-        </div>
+            <li class="nav-item justify-content-center">
+              <a class="nav-link text-white active" href=""
+                >"Repository name 2"</a
+              >
+            </li>
+          </div>
+        --></div>
+      </div>
     </div>
+  </div>
 </body>
-
 
 <!--  <div class="sidebar-header text-center">
             <a class="sidebar-toggler"><i class="fa fa-bars"></i></a>
