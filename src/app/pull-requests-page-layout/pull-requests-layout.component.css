@@ -1,0 +1,12 @@
+.d-sm-block {
+  display: block !important;
+}
+
+#pull-requests-search-bar {
+  background-color: #0d1116;
+  position: relative;
+}
+
+#body {
+  justify-content: flex-middle;
+}
