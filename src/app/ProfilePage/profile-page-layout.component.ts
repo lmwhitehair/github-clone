@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, Input } from "@angular/core";
 
 @Component({
     selector: 'github-profile-page-layout',
@@ -7,5 +7,11 @@ import { Component } from "@angular/core";
 })
 
 export class ProfilePageLayoutComponent {
-    
+    @Input() repoName: string;
+    @Input() repoDescription: string;
+
+    constructor(){
+        this.repoName="undefined";
+        this.repoDescription="No description";
+    }
 }

@@ -46,6 +46,6 @@ hr {
   margin-left: 200px;
 }
 
-#repoName {
-  color: rgb(20, 143, 184);
+#trending_repositories {
+  margin-top: -500px;
 }

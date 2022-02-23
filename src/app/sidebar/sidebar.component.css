@@ -21,14 +21,6 @@
   margin-right: 50px;
 }
 
-.form-control {
-  position: relative;
-  background-color: #020408;
-  border-color: grey;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
-}
-
 .nav-item {
   background-color: #0d1116;
 }
@@ -40,7 +32,8 @@
 
 .form-control {
   position: relative;
-  background-color: #303d56;
+  background-color: #020408;
+  border-color: grey;
 }
 
 .dropdown-menu {

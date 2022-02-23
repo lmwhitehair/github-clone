@@ -1,0 +1,85 @@
+<div class="container">
+  <div class="subnav color-bg-default subnav-sticky js-sticky">
+    <nav class="container-lg mx-auto p-responsive" role="navigation">
+      <div
+        class="d-flex flex-wrap flex-items-center flex-justify-center flex-md-justify-start text-center text-md-left"
+      >
+        <div class="col-lg-3 mr-2"></div>
+        <a
+          class="subnav-link no-underline subnav-primary d-inline-block f5 py-0 py-md-3 mt-2 mt-md-0 mr-md-4"
+          >Explore</a
+        >
+        <a
+          class="subnav-link no-underline subnav-primary d-inline-block f5 py-0 py-md-3 mt-2 mt-md-0 mr-md-4"
+          >Topics</a
+        >
+        <a
+          class="subnav-link no-underline subnav-primary d-inline-block f5 py-0 py-md-3 mt-2 mt-md-0 mr-md-4"
+          >Trending</a
+        >
+        <a
+          class="subnav-link no-underline subnav-primary d-inline-block f5 py-0 py-md-3 mt-2 mt-md-0 mr-md-4"
+          >Collections</a
+        >
+        <a
+          class="subnav-link no-underline subnav-primary d-inline-block f5 py-0 py-md-3 mt-2 mt-md-0 mr-md-4"
+          >Events</a
+        >
+        <a
+          class="subnav-link no-underline subnav-primary d-inline-block f5 py-0 py-md-3 mt-2 mt-md-0 mr-md-4"
+          >Github Sponsors</a
+        >
+      </div>
+    </nav>
+  </div>
+</div>
+
+<p class="d-flex justify-content-center" id="header">
+  Here's what we found based on your interests...
+</p>
+<div class="container d-flex">
+  <div class="card d-flex" id="profile_card">
+    <img src="assets/photos/47421567.png" class="card-image-top" />
+    <div class="card-body d-flex justify-content-center text-white">
+      <p class="card-text">"Username"</p>
+    </div>
+    <hr class="solid" />
+    <div class="card-body d-flex" id="starred_topics">
+      <p class="card-text">0 starred topics</p>
+    </div>
+    <hr class="solid" />
+    <div class="card-body d-flex" id="starred_topics">
+      <p class="card-text">0 starred repositories</p>
+    </div>
+  </div>
+  <div class="card d-flex justify-content-center" id="recommended_topics">
+    <div class="header text-white">Based on topics you've starred</div>
+    <div class="header" id="recommended_topics_repo_name">linuxdefender</div>
+    <hr class="solid" />
+    <div class="card-body d-flex justify-content-center">
+      <p class="card-text text-white">
+        There are 5 public repositories matching this topic
+      </p>
+    </div>
+    <hr class="solid" />
+    <div class="card-body d-flex justify-content-center" id="repo_name">
+      <p class="card-text">seanpm2001 / linux_defender_for_raspberry_pi</p>
+    </div>
+    <hr class="solid" />
+    <div class="card-body d-flex justify-content-center" id="repo_name">
+      <p class="card-text">seanpm2001 / linux_defender_for_android</p>
+    </div>
+  </div>
+</div>
+
+<div class="container d-flex justify-content-end">
+  <div class="card d-flex" id="trending_repositories">
+    <div class="header text-white">Trending Repositories</div>
+    <div *ngFor="let data of recommendedRepos">
+      <github-explore-layout
+        repoName="{{data.repoName}}"
+        repoDescription="{{data.repoDescription}}"
+      ></github-explore-layout>
+    </div>
+  </div>
+</div>

@@ -1,14 +1,23 @@
-<div class="pt-4 position-relative container-lg p-responsive" id="body">
+<div
+  class="pt-4 position-relative container-lg p-responsive d-flex flex-row justify-content-center"
+  id="body"
+>
   <div class="subnav d-flex mb-3 flex-column flex-md-row">
     <nav class="subnav-links d-flex d-sm-block" data-pjax>
       <div class="btn-group" role="group">
-        <button type="button" class="btn btn-outline-primary">Created</button>
-        <button type="button" class="btn btn-outline-primary">Assigned</button>
-        <button type="button" class="btn btn-outline-primary">Mentioned</button>
+        <button type="button" class="btn btn-outline-dark text-white">
+          Created
+        </button>
+        <button type="button" class="btn btn-outline-dark text-white">
+          Assigned
+        </button>
+        <button type="button" class="btn btn-outline-dark text-white">
+          Mentioned
+        </button>
         <form class="form-inline d-flex md-form form-sm">
           <input
             class="form-control form-control-sm mr-3 w-120 text-white"
-            id="issues-page-search-bar"
+            id="pull-requests-search-bar"
             type="text"
             placeholder="is:open is:pr assignee:lmwhitehair archived:false "
             aria-label="Search or jump to..."
@@ -17,5 +26,16 @@
         </form>
       </div>
     </nav>
+  </div>
+</div>
+
+<div
+  class="pt-4 position-relative container-lg p-responsive d-flex flex-row justify-content-center"
+>
+  <div class="card w-50">
+    <div class="card-header text-white">0 Open 0 Closed</div>
+    <div class="card-body text-center text-white">
+      <p class="card-text">No results matched your search</p>
+    </div>
   </div>
 </div>

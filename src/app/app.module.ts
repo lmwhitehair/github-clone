@@ -13,6 +13,9 @@ import { SidebarCardComponent } from './sidebar/sidebar.card.component';
 import { MarketplacePageLayoutComponent } from './marketplace-page/marketplace-page-layout.component';
 import { IssuesPageLayoutComponent } from './issues-page-layout/issues-page-layout.component';
 import { ExplorePageLayoutComponent } from './explore-page-layout/explore-page-layout.component';
+import { ExplorePageHomeLayout } from './explore-page-layout/explore-page-home-layout';
+import { ProfilePageLayoutComponent } from './ProfilePage/profile-page-layout.component';
+import { ProfilePageHomeLayoutComponent } from './ProfilePage/profile-page-home-layout.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,10 @@ import { ExplorePageLayoutComponent } from './explore-page-layout/explore-page-l
     SidebarCardComponent,
     MarketplacePageLayoutComponent,
     IssuesPageLayoutComponent,
-    ExplorePageLayoutComponent
+    ExplorePageLayoutComponent,
+    ExplorePageHomeLayout,
+    ProfilePageLayoutComponent,
+    ProfilePageHomeLayoutComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,110 @@
+<div
+  class="mt-4 position-sticky top-0 d-none d-md-block color-bg-default width-full border-bottom color-border-muted"
+>
+  <div class="container-xl px-3 px-md-4 px-lg-5 d-flex justify-content-center">
+    <div
+      class="Layout Layout--flowRow-until-md Layout--sidebarPosition-start Layout--sidebarPosition-flowRow-start"
+    >
+      <div
+        class="UnderlineNav width-full box-shadow-none js-responsive-underlinenav overflow-md-x-hidden"
+      >
+        <nav class="UnderlineNav-body width-full p-responsive">
+          <a
+            class="UnderlineNav-item js-responsive-underlinenav-item text-white"
+          >
+            <svg
+              height="16"
+              viewBox="0 0 16 16"
+              version="1.1"
+              width="16"
+              data-view-component="true"
+              class="octicon octicon-book UnderlineNav-octicon hide-sm"
+            ></svg>
+            Overview
+          </a>
+          <a
+            class="UnderlineNav-item js-responsive-underlinenav-item text-white"
+          >
+            <svg
+              height="16"
+              viewBox="0 0 16 16"
+              version="1.1"
+              width="16"
+              data-view-component="true"
+              class="octicon octicon-book UnderlineNav-octicon hide-sm"
+            ></svg>
+            Repositories
+          </a>
+          <a
+            class="UnderlineNav-item js-responsive-underlinenav-item text-white"
+          >
+            <svg
+              height="16"
+              viewBox="0 0 16 16"
+              version="1.1"
+              width="16"
+              data-view-component="true"
+              class="octicon octicon-book UnderlineNav-octicon hide-sm"
+            ></svg>
+            Projects
+          </a>
+          <a
+            class="UnderlineNav-item js-responsive-underlinenav-item text-white"
+          >
+            <svg
+              height="16"
+              viewBox="0 0 16 16"
+              version="1.1"
+              width="16"
+              data-view-component="true"
+              class="octicon octicon-book UnderlineNav-octicon hide-sm"
+            ></svg>
+            Packages
+          </a>
+          <a
+            class="UnderlineNav-item js-responsive-underlinenav-item text-white"
+          >
+            <svg
+              height="16"
+              viewBox="0 0 16 16"
+              version="1.1"
+              width="16"
+              data-view-component="true"
+              class="octicon octicon-book UnderlineNav-octicon hide-sm d-flex"
+            ></svg>
+            Stars
+          </a>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p class="d-flex justify-content-center text-white">
+  Popular Repositories <br />
+</p>
+
+<div class="container d-flex justify-content-start">
+  <div class="card d-flex" id="profile_card">
+    <img
+      class="card-image-top rounded-circle justify-content-center"
+      alt="25x25"
+      src="assets/photos/47421567.png"
+    />
+    <div class="card-body d-flex text-white">
+      <p class="card-text">
+        John Doe <br />
+        myUsername
+      </p>
+    </div>
+  </div>
+
+  <div class="container d-flex justify-content-center">
+    <div *ngFor="let data of personalRepos">
+      <github-profile-page-layout
+        repoName="{{ data.repoName }}"
+        repoDescription="{{ data.repoDescription }}"
+      ></github-profile-page-layout>
+    </div>
+  </div>
+</div>

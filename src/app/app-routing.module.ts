@@ -7,6 +7,8 @@ import { IssuesPageLayoutComponent } from './issues-page-layout/issues-page-layo
 import { MarketplacePageLayoutComponent } from './marketplace-page/marketplace-page-layout.component';
 import { ExplorePageLayoutComponent } from './explore-page-layout/explore-page-layout.component';
 import { ProfilePageLayoutComponent } from './ProfilePage/profile-page-layout.component';
+import { ExplorePageHomeLayout } from './explore-page-layout/explore-page-home-layout';
+import { ProfilePageHomeLayoutComponent } from './ProfilePage/profile-page-home-layout.component';
 
 const routes: Routes = [
   {
@@ -31,11 +33,11 @@ const routes: Routes = [
   },
   {
     path: 'explore',
-    component: ExplorePageLayoutComponent
+    component: ExplorePageHomeLayout
   },
   {
     path: 'profile',
-    component: ProfilePageLayoutComponent
+    component: ProfilePageHomeLayoutComponent
   }
   
 ];
