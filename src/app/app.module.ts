@@ -16,6 +16,8 @@ import { ExplorePageLayoutComponent } from './explore-page-layout/explore-page-l
 import { ExplorePageHomeLayout } from './explore-page-layout/explore-page-home-layout';
 import { ProfilePageLayoutComponent } from './ProfilePage/profile-page-layout.component';
 import { ProfilePageHomeLayoutComponent } from './ProfilePage/profile-page-home-layout.component';
+import { HttpClientModule } from '@angular/common/http';
+import { UserInfoComponent } from './user-info/user-info.component'
 
 @NgModule({
   declarations: [
@@ -32,11 +34,13 @@ import { ProfilePageHomeLayoutComponent } from './ProfilePage/profile-page-home-
     ExplorePageLayoutComponent,
     ExplorePageHomeLayout,
     ProfilePageLayoutComponent,
-    ProfilePageHomeLayoutComponent
+    ProfilePageHomeLayoutComponent,
+    UserInfoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
