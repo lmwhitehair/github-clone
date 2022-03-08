@@ -1,6 +1,8 @@
 import { Component } from "@angular/core";
+import { GithubService } from "../github.service";
 import { mock_profile_page_personal_repos_list } from "./mock-profile-page-personal-repos-list";
 import { ProfilePageLayoutComponent } from "./profile-page-layout.component";
+import { ProfilePagePersonalReposModel } from "./profile-page-personal-repos.model";
 
 @Component({
     selector: "github-profile-page-home-layout",
@@ -11,10 +13,16 @@ import { ProfilePageLayoutComponent } from "./profile-page-layout.component";
 export class ProfilePageHomeLayoutComponent {
     personalRepos: ProfilePageLayoutComponent[] = [];
 
-    constructor() {
-        for(var pRData of mock_profile_page_personal_repos_list){
-            this.personalRepos.push(pRData);
-        }
+    constructor(private profileData: GithubService) {
+    
+    }
+
+    ngOnInit(): void {
+        this.profileData.getProfilePage().subscribe((data: ProfilePagePersonalReposModel []) => {
+            for(var profileData of data){
+                this.personalRepos.push(profileData);
+            }
+        })
     }
 
 

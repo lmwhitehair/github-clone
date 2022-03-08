@@ -1,16 +1,25 @@
-import { Component } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 import { ActivityBarsComponent } from 'src/app/activitybars/activity.bar.component';
-import { mock_activitybar_list } from 'src/app/activitybars/mock-activitybar-list';
+import { ActivityBarModel } from "../activitybars/activity.bar.model";
+import { GithubService } from "../github.service";
 
 @Component({
     selector: 'github-home-layout',
     templateUrl: 'home-layout.component.html'
 })
-export class HomeLayoutComponent {
+export class HomeLayoutComponent implements OnInit{
     activityBars: ActivityBarsComponent[] = [];
-    constructor(){
-        for(var abData of mock_activitybar_list){
-          this.activityBars.push(abData);
-        }
+    constructor(private activityBarData: GithubService){
+       
+      }
+
+      ngOnInit(): void {
+        this.activityBarData.getActivityBar().subscribe((data: ActivityBarModel []) => {
+          console.log("Fetching data");
+          for(var activityData of data){
+            console.log(activityData);
+            this.activityBars.push(activityData);
+          }
+        });
       }
 }
