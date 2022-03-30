@@ -26,4 +26,8 @@ export class GithubService {
     getProfilePage() {
         return this.db.list<ProfilePagePersonalReposModel>("profilepage").valueChanges();
     }
+
+    public addActivityBar(activityBar: ActivityBarModel){
+        this.db.list<ActivityBarModel>("activitybar").push(activityBar);
+    }
 }

@@ -1,0 +1,55 @@
+<div class="container">
+  <div class="row">
+    <div class="col-8">
+      <form #postForm="ngForm" (ngSubmit)="addActivityBar(postForm.value)">
+        <div class="input-group">
+          <span class="input-group-text">Commit Description:</span>
+          <input
+            type="text"
+            class="form-control"
+            ngModel
+            name="commitDescription"
+          />
+        </div>
+        <div class="input-group">
+          <span class="input-group-text">Commit Hash:</span>
+          <input
+            type="text"
+            class="form-control"
+            ngModel
+            name="commitHash"
+            required
+          />
+        </div>
+        <div class="input-group">
+          <span class="input-group-text">Repo:</span>
+          <input
+            type="text"
+            class="form-control"
+            ngModel
+            name="repo"
+            required
+          />
+        </div>
+        <div class="input-group">
+          <span class="input-group-text">User:</span>
+          <input
+            type="text"
+            class="form-control"
+            ngModel
+            name="user"
+            required
+          />
+        </div>
+
+        <button
+          class="btn text-white mt-3"
+          type="submit"
+          [disabled]="!postForm.valid"
+        >
+          Add Activity Bar
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
