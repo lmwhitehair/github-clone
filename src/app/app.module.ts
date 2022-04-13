@@ -26,6 +26,7 @@ import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { AddActivitybarComponent } from './add-activitybar/add-activitybar.component';
 import { FormsModule } from '@angular/forms';
 import { GithubService } from './github.service';
+import { AuthenticationComponent } from './auth/authentication/authentication.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { GithubService } from './github.service';
     ProfilePageLayoutComponent,
     ProfilePageHomeLayoutComponent,
     UserInfoComponent,
-    AddActivitybarComponent
+    AddActivitybarComponent,
+    AuthenticationComponent
   ],
   imports: [
     BrowserModule,

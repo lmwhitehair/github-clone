@@ -1,25 +1,30 @@
 <!DOCTYPE html?>
 
 <html lang="en">
-  <github-user-info></github-user-info>
-  <github-topbar>loading topbar</github-topbar>
+  <div *ngIf="myInfo == undefined">
+    <app-authentication></app-authentication>
+  </div>
+  <div *ngIf="myInfo != undefined">
+    <github-user-info></github-user-info>
+    <github-topbar>loading topbar</github-topbar>
 
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=depth-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <head>
+      <meta charset="utf-8" />
+      <meta
+        name="viewport"
+        content="width=depth-width, initial-scale=1, shrink-to-fit=no"
+      />
 
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min"
-    />
-  </head>
+      <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min"
+      />
+    </head>
 
-  <body>
-    <router-outlet></router-outlet>
-    <!-- <github-home-layout>loading home layout</github-home-layout> -->
-    <github-footer>loading footer</github-footer>
-  </body>
+    <body>
+      <router-outlet></router-outlet>
+      <!-- <github-home-layout>loading home layout</github-home-layout> -->
+      <github-footer>loading footer</github-footer>
+    </body>
+  </div>
 </html>

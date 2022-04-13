@@ -10,6 +10,7 @@ import { ProfilePageLayoutComponent } from './ProfilePage/profile-page-layout.co
 import { ExplorePageHomeLayout } from './explore-page-layout/explore-page-home-layout';
 import { ProfilePageHomeLayoutComponent } from './ProfilePage/profile-page-home-layout.component';
 import { AddActivitybarComponent } from './add-activitybar/add-activitybar.component';
+import { AuthenticationComponent } from './auth/authentication/authentication.component';
 
 const routes: Routes = [
   {
@@ -44,6 +45,11 @@ const routes: Routes = [
   {
     path: 'admin',
     component: AddActivitybarComponent
+  }, 
+
+  {
+    path: 'auth',
+    component: AuthenticationComponent
   }
   
 ];
